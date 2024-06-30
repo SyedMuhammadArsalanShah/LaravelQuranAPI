@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route:: get("index/",[Quran::class, "getsurahdata"]);
+Route:: get("read/{surahnumber}",[Quran::class, "getreaddata"]);

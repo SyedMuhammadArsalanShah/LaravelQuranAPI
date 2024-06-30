@@ -9,12 +9,13 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Aref+Ruqaa&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Aref+Ruqaa&display=swap" rel="stylesheet">
     <style>
         td {
             font-family: 'Amiri Quran', serif;
+
         }
     </style>
 
@@ -40,6 +41,7 @@
             </thead>
             <tbody>
 
+               
                 {{-- blade templating => foreach loop --}}
                 @foreach ($collection as $item)
                     <tr>
@@ -50,7 +52,8 @@
                         <td>{{ $item['englishName'] }} </td>
                         <td>{{ $item['numberOfAyahs'] }} </td>
                         <td>{{ $item['revelationType'] }} </td>
-                        <td><button type="button" class="btn btn-light">ReadSurah</button></td>
+                        <td><button type="button" class="btn btn-light"><a href="/read/{{ $item['number'] }}"
+                                    target="_blank" rel="noopener noreferrer">ReadSurah</a></button></td>
 
 
                     </tr>
