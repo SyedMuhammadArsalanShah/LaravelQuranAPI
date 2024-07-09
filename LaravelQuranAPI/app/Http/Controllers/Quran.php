@@ -15,11 +15,15 @@ class Quran extends Controller
         return view("surahs", ["collection" => $dataQuran["data"]["surahs"]["references"]]);
     }
 
-
-    function getreaddata($snum)
+    public function getreaddata($snum)
     {
-        $dataQuran = Http::get("https://api.alquran.cloud/v1/surah/{$snum}");
 
-        return view("readsurah", ["collection" => $dataQuran["data"]["ayahs"]]);
+        $dataQuran = Http::get("https://api.alquran.cloud/v1/surah/{$snum}");
+        $data1 = Http::get("https://api.alquran.cloud/v1/edition/language");
+        return view("readsurah", [
+            "collection" => $dataQuran["data"]["ayahs"],
+            "lang" => $data1["data"],
+            "snum" => $snum // Pass the $snum parameter to the view
+        ]);
     }
 }

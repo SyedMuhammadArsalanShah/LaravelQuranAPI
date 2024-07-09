@@ -13,9 +13,6 @@ Use App\Http\Controllers\Quran;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route:: get("index/",[Quran::class, "getsurahdata"]);
+Route:: get("/",[Quran::class, "getsurahdata"]);
 Route:: get("read/{surahnumber}",[Quran::class, "getreaddata"]);
