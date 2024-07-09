@@ -1,9 +1,9 @@
-Name: Mushaf web application
-Features:
+### Name: Mushaf web application
+### Features:
 
 Top 20 Qur'an Reciters
 Explore 134 Quran Translations & Tafaseer in 40 Languages
-Languages, Translations, and Tafaseer Statistics:
+### Languages, Translations, and Tafaseer Statistics:
 
 Arabic: 20
 English: 19
@@ -44,8 +44,9 @@ Uzbek: 1
 Amharic: 1
 Berber: 1
 Dhivehi: 1
-Source Code:
+
+### Source Code:
 https://github.com/SyedMuhammadArsalanShah/LaravelQuranAPI
 
-Technology Stack:
+### Technology Stack:
 JavaScript, PHP, Laravel framework, Quran API from alquran.cloud.
