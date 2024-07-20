@@ -49,4 +49,4 @@ Dhivehi: 1
 https://github.com/SyedMuhammadArsalanShah/LaravelQuranAPI
 
 ### Technology Stack:
-JavaScript, PHP, Laravel framework, Quran API from alquran.cloud.
+JavaScript, PHP, Laravel framework, Quran API from alquran.cloud
